@@ -6,7 +6,7 @@
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let newNumber
+let newNumber = 51
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -24,9 +24,10 @@ let isNumber2 = 4000
 //  of True or False. The code will indeed be the same for both variables
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
-
-let number1IsNumber
-let number2IsNumber
+let checkisnumber1 = isNaN(isNumber1)
+let checkisnumber2 = isNaN(isNumber2)
+let number1IsNumber = !checkisnumber1
+let number2IsNumber = !checkisnumber2 
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -42,7 +43,7 @@ let getMyAbsoluteValue = -99
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let absoluteValue
+let absoluteValue = Math.abs(getMyAbsoluteValue)
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -58,7 +59,7 @@ let roundMeUp = 85.4
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let roundedUpNumber
+let roundedUpNumber = Math.ceil(roundMeUp)
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -74,7 +75,7 @@ let roundMeDown = 85.4
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let roundedDownNumber
+let roundedDownNumber = Math.floor(roundMeDown)
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -91,7 +92,7 @@ let powerNumber = 9
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let baseToThePower
+let baseToThePower = Math.pow(baseNumber, powerNumber)
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -107,8 +108,8 @@ let scoreValue = 67
 let maxValue = 145
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
-
-let scorePercentage
+let totalresult=(scoreValue / maxValue) * 100
+let scorePercentage = totalresult.toFixed(2)
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -125,7 +126,7 @@ let score = 145
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let scoreMessage
+let scoreMessage = messagePrefix + " " + score
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -141,7 +142,7 @@ let parseTheNumber = "You got a score of 25.5"
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let parsedNumber
+let parsedNumber = parseFloat(parseTheNumber.replace(/[^0-9.]/g, ""))
 
 ////////////////////////////////////////////////////////////////////////
 
